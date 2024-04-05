@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import WalletExpensesComponent from "../WalletExpense/WalletExpenses"
 // import ExpensesTable from "../ExpenseTable/ExpenseTable";
 import "./Dashboard.css";
-// import ''
+import LineBarChart  from "../LineBarChart/LineBarChart";
 
 
 function Dashboard(){
@@ -61,9 +61,9 @@ return (
             expenseData={expenses}
             handleExpenseListUpdate={handleExpenseListUpdate}
             categories={categories}
-          />
+          /> */}
           <LineBarChart data={expenses} categories={categories} />
-        </div>
+        {/* </div>
       )} */}
     </div>
   );
