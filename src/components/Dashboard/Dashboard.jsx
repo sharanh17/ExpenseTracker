@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import WalletExpensesComponent from "../WalletExpense/WalletExpenses"
-// import ExpensesTable from "../ExpenseTable/ExpenseTable";
+ import ExpensesTable from "../ExpenseTable/ExpenseTable";
 import "./Dashboard.css";
 import LineBarChart  from "../LineBarChart/LineBarChart";
 
@@ -55,16 +55,16 @@ return (
         walletBalance={walletBalance}
         setWalletBalance={setWalletBalance}
       />
-      {/* {expenses.length > 0 && (
+      {expenses.length > 0 && (
         <div className="dashboard-info-container">
           <ExpensesTable
             expenseData={expenses}
             handleExpenseListUpdate={handleExpenseListUpdate}
             categories={categories}
-          /> */}
+          />
           <LineBarChart data={expenses} categories={categories} />
-        {/* </div>
-      )} */}
+        </div>
+      )}
     </div>
   );
 }
